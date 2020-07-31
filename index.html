@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="slide-navbtn">
+          <i class="fa fa-bars"></i>
+        </div>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="logo" />
+        </a>
+        <div class="user ml-auto">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ05W2mFgPx3oy7l546kIv31MYgWBLU3EZsDw&usqp=CAU"
+          />
+          <div class="user-info">
+            <span class="title">Jemmy Lee</span>
+            <span class="desig">Team Leader</span>
+          </div>
+        </div>
+        <ul class="d-flex win-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-item fa fa-microphone" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-item fa fa-question" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-item fa fa-power-off" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="my-container">
+      <div class="left-container">
+        <div class="left-box">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <ul class="menu-list">
+            <li class="menu-item has-sub">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-user-circle-o"></i>Account</a
+              >
+              <ul>
+                <li><a>sub item 1</a></li>
+                <li><a>sub item 2</a></li>
+                <li><a>sub item 3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item has-sub">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-user"></i>Summary</a
+              >
+              <ul>
+                <li><a>sub item 1</a></li>
+                <li><a>sub item 2</a></li>
+                <li><a>sub item 3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-ticket"></i>Tickets</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-users"></i>All Mentions</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-tachometer"></i>channels</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-user"></i>Reports</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-clone"></i>Add Contents</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-user"></i>Campaign</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-bar-chart"></i>Analytics</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-cog"></i>Email Marketing</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-cog"></i>Ticket Ageing Dashboard</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-pie-chart"></i>PR Dashboard</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-cog"></i>Social Schedule</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-cog"></i>UGC Management</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#!"
+                ><i class="fa fa-cog"></i>DIY Dashboard</a
+              >
+            </li>
+          </ul>
+          <ul class="d-flex mob-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-item fa fa-microphone" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-item fa fa-question" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-item fa fa-power-off" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="row">
+          <div class="col-lg breadcrumb-nav">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb blue-gradient">
+                <li>
+                  <i
+                    onclick="openNav()"
+                    class="fa fa-circle-o-notch open"
+                    aria-hidden="true"
+                  ></i>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Locobuzz</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="active" href="#!">
+                    Tickets
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <section class="info">
+          <h4 class="heading">Profile Configuration</h4>
+          <p class="description">
+            configure all your channels/profiles, search keywords here
+          </p>
+        </section>
+
+        <section id="tabs" class="project-tab">
+          <div class="row">
+            <div class="col-md-12">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a
+                    class="nav-item nav-link active"
+                    id="social-profiles-tab"
+                    data-toggle="tab"
+                    href="#social-profiles"
+                    role="tab"
+                    aria-controls="social-profiles"
+                    aria-selected="true"
+                    >Social Profiles (3)</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="keywords-tab"
+                    data-toggle="tab"
+                    href="#keywords"
+                    role="tab"
+                    aria-controls="keywords"
+                    aria-selected="false"
+                    >Keywords</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="add-Accounts-tab"
+                    data-toggle="tab"
+                    href="#add-Accounts"
+                    role="tab"
+                    aria-controls="add-Accounts"
+                    aria-selected="false"
+                    >Add Accounts</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="other-profile-tab"
+                    data-toggle="tab"
+                    href="#other-profile"
+                    role="tab"
+                    aria-controls="other-profile"
+                    aria-selected="false"
+                    >Other Profiles</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="social-profiles"
+                  role="tabpanel"
+                  aria-labelledby="social-profiles-tab"
+                >
+                  <div class="action-bar">
+                    <div class="row mb-3">
+                      <div class="col-sm-9">
+                        Active Profiles / Total Profiles :<label
+                          ><span class="flag"> 3</span> / 4</label
+                        >
+                      </div>
+                      <div class="dropdown dropright ml-auto add-btn">
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-toggle="dropdown"
+                        >
+                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                          Add Profiles
+                        </button>
+                        <div class="dropdown-menu social-dropdown">
+                          <p class="dropdown-item">
+                            add your social media profiles
+                          </p>
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            ><i class="fa fa-facebook"></i>Facebook</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            ><i class="fa fa-twitter"></i>Twitter</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            ><i class="fa fa-instagram"></i>Instagram</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            ><i class="fa fa-linkedin"></i>Linkedin</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            ><i class="fa fa-youtube"></i>Youtube</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <section class="social-box">
+                      <h4>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>Facebook and Instagram
+                        Profiles (3)
+                      </h4>
+                      <div class="row">
+                        <div
+                          class="col-sm-6 col-aligncenter col-md-6 col-lg-4 box"
+                        >
+                          <div class="inner">
+                            <div class="bank">
+                              <div class="bank-details">
+                                <div class="bank-name">
+                                  <div class="ribbon ribbon-1">Owned</div>
+                                  <img src="images/SBI-logo.svg" />
+                                  <div class="bank-data">
+                                    <span class="bank-title"
+                                      >State Bank of India</span
+                                    >
+                                    <span class="bank-date"
+                                      >Added on : Dec 12th 2019, 1.56pm</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="bank-updates">
+                                <p>
+                                  Last update on :<span class="date"
+                                    >Dec 12th 2019, 1.56pm</span
+                                  >
+                                </p>
+                                <div class="bank-action">
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-trash-o"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Delete
+                                  </button>
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-pause"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Pause
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="splitter">
+                              <!-- <i class="fa fa-search LeftIcon"></i> -->
+                              <img
+                                class="LeftIcon"
+                                src="images/link-button.svg"
+                              />
+                            </div>
+                            <div class="bank">
+                              <div class="bank-info">
+                                <div class="bank-name">
+                                  <img src="images/SBI-logo.svg" />
+                                  <div class="bank-data">
+                                    <span class="bank-title"
+                                      >State Bank of India</span
+                                    >
+                                    <span class="bank-date"
+                                      >Added on : Dec 12th 2019, 1.56pm</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="bank-updates">
+                                <p>
+                                  Last update on :<span class="date"
+                                    >Dec 12th 2019, 1.56pm</span
+                                  >
+                                </p>
+                                <div class="bank-action">
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-trash-o"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Delete
+                                  </button>
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-pause"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Pause
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-sm-6 col-aligncenter col-md-6 col-lg-4 box"
+                        >
+                          <div class="inner">
+                            <div class="bank">
+                              <div class="bank-details">
+                                <div class="bank-name">
+                                  <div class="ribbon ribbon-2">Public</div>
+                                  <img src="images/Hdfc-Logo.png" />
+                                  <div class="bank-data">
+                                    <span class="bank-title">HDFC</span>
+                                    <span class="bank-date"
+                                      >Added on : Dec 12th 2019, 1.56pm</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="bank-updates">
+                                <div class="bank-action">
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-trash-o"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Delete
+                                  </button>
+                                  <button class="btn btn-bank">
+                                    <i
+                                      class="fa fa-pause"
+                                      aria-hidden="true"
+                                    ></i>
+                                    Pause
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="keywords"
+                  role="tabpanel"
+                  aria-labelledby="keywords-tab"
+                >
+                  <h1>keywords tab</h1>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="add-Accounts"
+                  role="tabpanel"
+                  aria-labelledby="add-Accounts-tab"
+                >
+                  <h1>add accounts tab</h1>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="other-profile"
+                  role="tabpanel"
+                  aria-labelledby="other-profile-tab"
+                >
+                  <h1>other profile</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
