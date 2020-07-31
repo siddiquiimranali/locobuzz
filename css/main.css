@@ -1,10 +1,10 @@
 :root {
   --primary-clr: #adbfc1;
-  --secondary-clr: #869dad;
-  --bg-4: #fff;
+  --secondary-clr: #869dad; 
   --bg-1: #f7f8f9;
   --bg-2: #002a3d;
   --bg-3: #d9e5ed;
+   --bg-4: #fff;
 }
 body {
   font-family: sans-serif;
@@ -484,6 +484,9 @@ p.dropdown-item {
   }
 }
 @media screen and (max-width: 575px) {
+  .nav-bar{
+    flex-direction:row-reverse;
+  }
   .win-menu {
     display: none !important;
   }
@@ -520,10 +523,6 @@ p.dropdown-item {
   }
 }
 @media screen and (max-width: 420px) {
-  /*[class*="col-"] {
-    padding: 10px;
-  }
-  */
   .box {
     padding: 5px;
     min-width: auto;
